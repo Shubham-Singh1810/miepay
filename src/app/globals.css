@@ -13,9 +13,7 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
-.rightNav img{
-display: none;
-}
+
 section {
   height: 100vh;
   width: 100%;
@@ -235,7 +233,6 @@ h5 {
   font-weight: 700;
   font-family: "Montserrat";
   text-align: center;
-  
 }
 .contactInfo p {
   font-size: 22px;
@@ -243,7 +240,7 @@ h5 {
   font-family: "Montserrat";
   text-align: center;
   margin: 20px 0px;
-  color:gray
+  color: gray;
 }
 .contactInfo h4 {
   font-size: 24px;
@@ -266,12 +263,11 @@ h5 {
   font-family: "Montserrat";
   text-align: center;
 }
-.callDiv{
+.callDiv {
   margin: 20px 0px;
 }
 
-
-.footer{
+.footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -280,7 +276,7 @@ h5 {
   display: flex;
   justify-content: space-between;
 }
-.socialMediaMain{
+.socialMediaMain {
   position: relative;
   left: 40px;
   top: -20px;
@@ -289,11 +285,11 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-.socialMediaMain img{
+.socialMediaMain img {
   height: 18px;
   margin-bottom: 15px;
 }
-.scrollMain{
+.scrollMain {
   position: relative;
   right: 20px;
   top: -20px;
@@ -319,7 +315,7 @@ h5 {
   margin-top: 70px;
 }
 /* -----Responsive----- */
-@media(max-width:1024px){
+@media (max-width: 1024px) {
   .aboutContent p {
     width: 700px;
     font-size: 15px;
@@ -328,7 +324,7 @@ h5 {
     flex-direction: column-reverse;
     padding-top: 8px;
   }
-  .contactInfo{
+  .contactInfo {
     margin: 0px;
   }
   .contactForm {
@@ -360,7 +356,7 @@ h5 {
     font-size: 15px;
   }
   .contactInfo h6 {
-    font-size: 15px; 
+    font-size: 15px;
   }
   .contactInfo p {
     font-size: 12px;
@@ -379,7 +375,7 @@ h5 {
     line-height: 35px;
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .brandLogo img {
     height: 40px;
   }
@@ -402,15 +398,15 @@ h5 {
     font-size: 20px;
     text-align: center;
   }
-  .socialMediaMain{
+  .socialMediaMain {
     left: 20px;
     top: -10px;
   }
-  .socialMediaMain img{
+  .socialMediaMain img {
     height: 12px;
     margin-bottom: 8px;
   }
-  .scrollMain{
+  .scrollMain {
     right: -10px;
     top: -10px;
   }
@@ -447,7 +443,7 @@ h5 {
     flex-direction: column-reverse;
     padding-top: 50px;
   }
-  .contactInfo{
+  .contactInfo {
     margin: 0px;
   }
   .contactForm {
@@ -475,7 +471,7 @@ h5 {
     font-size: 12px;
   }
   .contactInfo h6 {
-    font-size: 12px; 
+    font-size: 12px;
   }
   .contactInfo p {
     font-size: 9px;
@@ -493,16 +489,44 @@ h5 {
     letter-spacing: 3px;
     line-height: 30px;
   }
-  .callDiv{
+  .callDiv {
     margin: 5px 0px;
   }
   .contactForm input {
     font-size: 16px !important;
   }
+  .barImg img {
+    display: block !important;
+    height: 20px;
+    width: 20px;
+    filter: brightness(0) invert(1);
+  }
+  .barImg {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+  }
+  .rightNav {
+    position: relative;
+    top: 0px;
+  }
+  .options{
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    top: 25px;
+  }
 }
-.borderRed{
+.options{
+  display: flex;
+}
+.borderRed {
   border-bottom: 1px solid red !important;
 }
-.borderWhite{
+.borderWhite {
   border-bottom: 1px solid white !important;
+}
+.barImg img {
+  display: none;
 }
