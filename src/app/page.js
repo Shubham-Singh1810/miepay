@@ -51,6 +51,7 @@ export default function Home() {
     },
   });
   return (
+    <>
     <div className="bodycontainer">
       <section id="home" ref={homeRef}>
         <div className="navMain">
@@ -58,11 +59,12 @@ export default function Home() {
             <img src="/images/brandLogo.png" />
           </div>
           <div className="rightNav">
+            <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"/>
             <p>
               <a href="#home">Home</a>
             </p>
             <p>
-              <a href="#about">About</a>
+              <a href="#about">About Us</a>
             </p>
             <p>
               <a href="#contact">Contact</a>
@@ -285,7 +287,8 @@ export default function Home() {
           <div className="line"></div>
         </motion.div>
       </div>
-      <ToastContainer />
     </div>
+      <ToastContainer />
+      </>
   );
 }

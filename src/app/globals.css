@@ -13,6 +13,9 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
+.rightNav img{
+display: none;
+}
 section {
   height: 100vh;
   width: 100%;
