@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -50,12 +50,10 @@ export default function Home() {
       }
     },
   });
-  const [showOption, setShowOption] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.innerWidth < 768;
-    }
-    return false;
-  });
+  const [showOption, setShowOption] = useState(
+    window.innerWidth ? true : false
+  );
+
   return (
     <>
       <div className="bodycontainer">
@@ -273,16 +271,22 @@ export default function Home() {
             className="socialMediaMain"
           >
             <div>
-              <img src="/images/instagram2.png" alt="Logo" />
+              <a href="https://www.instagram.com/miepay.ca/" target="blank">
+                <img src="/images/instagram2.png" alt="Logo" />
+              </a>
             </div>
             <div>
               <img src="/images/tik-tok2.png" alt="Logo" />
             </div>
             <div>
-              <img src="/images/youtube2.png" alt="Logo" />
+              <a href="https://www.youtube.com/@MIEPAY_CA" target="blank">
+                <img src="/images/youtube2.png" alt="Logo" />
+              </a>
             </div>
             <div>
-              <img src="/images/twitter2.png" alt="Logo" />
+              <a href="https://x.com/Miepay_ca" target="blank">
+                <img src="/images/twitter2.png" alt="Logo" />
+              </a>
             </div>
             <div>
               <img src="/images/facebook2.png" alt="Logo" />
