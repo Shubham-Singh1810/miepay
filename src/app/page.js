@@ -53,7 +53,6 @@ export default function Home() {
   const [showOption, setShowOption] = useState(
     window.innerWidth ? true : false
   );
-
   return (
     <>
       <div className="bodycontainer">
